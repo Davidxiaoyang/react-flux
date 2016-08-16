@@ -1,0 +1,5 @@
+flux鼓励的是一种单向交互
+action代表的是一个操作，
+它通过dispatcher分派到各个store,
+store主要负责数据的存储和处理一些数据，
+然后根据store的内容去创建view
