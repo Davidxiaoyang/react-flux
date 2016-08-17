@@ -4,3 +4,12 @@ action代表的是一个操作，
 store主要负责数据的存储和处理一些数据，
 然后根据store的内容去创建view
 view可能会产生一些新的action，然后又回到dispatcher，从而产生一个循环
+
+
+
+
+flux架构步骤
+1、用户跟界面交互，从而产生action
+2、dispatcher根据传入不同的type去分发action
+3、dispatcher通过注册action之后监听到具体的actionType去注册store的回调
+4、store监听到数据改变再通过view更新
